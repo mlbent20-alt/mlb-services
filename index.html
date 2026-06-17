@@ -523,6 +523,144 @@
     height: 4px;
     background: linear-gradient(90deg, var(--navy) 0%, var(--gold) 40%, var(--blue) 70%, var(--green) 100%);
   }
+
+  /* ── MOBILE RESPONSIVE ── */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+      padding: 0 20px;
+      height: 56px;
+    }
+    .nav-links {
+      display: none;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 90px 24px 60px;
+      min-height: auto;
+    }
+    .hero::after {
+      font-size: 160px;
+      right: -10px;
+      bottom: -30px;
+    }
+    .hero-headline {
+      font-size: 36px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero-sub {
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+    .hero-actions {
+      flex-direction: column;
+      gap: 12px;
+    }
+    .btn-primary, .btn-secondary {
+      width: 100%;
+      text-align: center;
+      padding: 14px 24px;
+      font-size: 13px;
+    }
+    .hero-dots {
+      margin-bottom: 28px;
+    }
+
+    /* PROCESS STRIP */
+    .process-strip {
+      padding: 20px 16px;
+      gap: 6px;
+    }
+    .process-step-pill {
+      font-size: 10px;
+      padding: 6px 12px;
+    }
+    .process-arrow {
+      font-size: 14px;
+    }
+
+    /* THREE STRATEGIES */
+    .strategies {
+      padding: 60px 24px;
+    }
+    .strategy-grid {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+    .strategy-card {
+      padding: 32px 24px;
+    }
+    .section-title {
+      font-size: 28px;
+    }
+    .section-sub {
+      font-size: 14px;
+      margin-bottom: 36px;
+    }
+
+    /* PAIN POINTS */
+    .pain {
+      padding: 60px 24px;
+    }
+    .pain-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .pain-item {
+      padding: 24px 20px;
+    }
+
+    /* CREDIBILITY */
+    .credibility {
+      padding: 60px 24px;
+    }
+    .cred-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .cred-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+    .stat-number {
+      font-size: 36px;
+    }
+
+    /* CTA */
+    .cta-section {
+      padding: 60px 24px;
+    }
+    .cta-title {
+      font-size: 28px;
+    }
+    .cta-sub {
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-secondary {
+      width: 100%;
+      max-width: 320px;
+    }
+    .cta-contact {
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+      padding: 24px 20px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -534,7 +672,7 @@
     <li><a href="#strategies">How We Work</a></li>
     <li><a href="#credibility">About Us</a></li>
     <li><a href="#cta">Get Started</a></li>
-    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeS1_IxvR32jw4nTHro53DPIyFe4awWo3yqyYL4h9yTJRbEXA/viewform?usp=publish-editor" target="_blank" class="nav-cta">Free Assessment</a></li>
+    <li><a href="/MLB_Business_Assessment.pdf" target="_blank" class="nav-cta">Free Assessment</a></li>
   </ul>
 </nav>
 
@@ -563,7 +701,7 @@
   </p>
 
   <div class="hero-actions">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeS1_IxvR32jw4nTHro53DPIyFe4awWo3yqyYL4h9yTJRbEXA/viewform?usp=publish-editor" target="_blank" class="btn-primary">Start With a Free Assessment</a>
+    <a href="/MLB_Business_Assessment.pdf" target="_blank" class="btn-primary">Start With a Free Assessment</a>
     <a href="#strategies" class="btn-secondary">See How We Work</a>
   </div>
 </section>
@@ -706,7 +844,7 @@
     No pitch. No pressure. Just clarity.
   </p>
   <div class="cta-buttons">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeS1_IxvR32jw4nTHro53DPIyFe4awWo3yqyYL4h9yTJRbEXA/viewform?usp=publish-editor" target="_blank" class="btn-primary">Complete the Free Assessment</a>
+    <a href="/MLB_Business_Assessment.pdf" target="_blank" class="btn-primary">Complete the Free Assessment</a>
     <a href="tel:6302679734" class="btn-secondary" style="color:white">Call Mike Directly</a>
   </div>
   <p class="cta-contact">
